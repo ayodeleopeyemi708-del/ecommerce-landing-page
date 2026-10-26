@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Review your MegaMart cart and enter delivery details.">
+    <title>Cart &amp; Checkout | MegaMart</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/cart-store.js" defer></script>
+    <script src="assets/js/checkout.js" defer></script>
+  </head>
+  <body class="checkout-page">
+    <header class="checkout-header">
+      <div class="page-width checkout-header__inner">
+        <a class="wordmark" href="index.html" aria-label="MegaMart home">Mega<span>Mart</span></a>
+        <a class="checkout-header__cart" href="checkout-page.html" aria-current="page">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M2 3h2l2.5 12.5a2 2 0 0 0 2 1.5h9.8a2 2 0 0 0 1.9-1.5L22 8H5"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+          Cart <span class="checkout-cart-count" aria-live="polite">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="page-width checkout-main">
+      <nav class="checkout-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Cart &amp; Checkout</span>
+      </nav>
+      <h1 class="checkout-title">Cart &amp; Checkout</h1>
+
+      <div class="checkout-layout">
+        <section class="checkout-panel cart-panel" aria-labelledby="cart-heading">
+          <div class="checkout-panel__heading">
+            <h2 id="cart-heading">Your cart</h2>
+            <button class="text-button clear-cart" type="button" hidden>Clear cart</button>
+          </div>
+          <div class="cart-lines" aria-live="polite"></div>
+          <div class="cart-empty" hidden>
+            <div class="cart-empty__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M2 3h2l2.5 12.5a2 2 0 0 0 2 1.5h9.8a2 2 0 0 0 1.9-1.5L22 8H5"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+            </div>
+            <h3>Your cart is empty</h3>
+            <p>Browse the store and add something you like.</p>
+            <a class="button button--secondary" href="index.html#phones">Continue shopping</a>
+          </div>
+          <p class="cart-error" role="alert" hidden></p>
+          <a class="continue-shopping" href="index.html#phones">← Continue shopping</a>
+        </section>
+
+        <aside class="checkout-panel order-panel" aria-labelledby="summary-heading">
+          <h2 id="summary-heading">Order summary</h2>
+          <dl class="summary-lines">
+            <div><dt>Subtotal</dt><dd class="summary-subtotal">$0</dd></div>
+            <div><dt>Delivery fee</dt><dd>Calculated after confirmation</dd></div>
+            <div><dt>Discount</dt><dd>$0</dd></div>
+          </dl>
+          <div class="summary-total">
+            <strong>Total before delivery</strong><strong class="summary-total__amount">$0</strong>
+          </div>
+          <p class="delivery-note">Delivery charges and final pricing cannot be confirmed in this front-end demo.</p>
+          <a class="button button--primary checkout-link" href="#customer-details">Continue to checkout</a>
+        </aside>
+      </div>
+
+      <section class="checkout-panel customer-panel" id="customer-details" aria-labelledby="customer-heading">
+        <h2 id="customer-heading">Delivery details</h2>
+        <p class="form-intro">Enter the details needed to arrange delivery. Your information is not saved by this demo.</p>
+        <form class="checkout-form">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+              <input id="full-name" name="fullName" type="text" autocomplete="name" required minlength="2" maxlength="100">
+            </div>
+            <div class="form-field">
+              <label for="email">Email address <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required maxlength="254">
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required minlength="7" maxlength="20" pattern="[0-9+ .\x2D]{7,20}" aria-describedby="phone-help">
+              <small id="phone-help">Include your country code if needed.</small>
+            </div>
+            <div class="form-field form-field--wide">
+              <label for="address">Delivery address <span aria-hidden="true">*</span></label>
+              <input id="address" name="address" type="text" autocomplete="street-address" required minlength="5" maxlength="200">
+            </div>
+            <div class="form-field">
+              <label for="city">City / town <span aria-hidden="true">*</span></label>
+              <input id="city" name="city" type="text" autocomplete="address-level2" required maxlength="100">
+            </div>
+            <div class="form-field">
+              <label for="region">State / region <span aria-hidden="true">*</span></label>
+              <input id="region" name="region" type="text" autocomplete="address-level1" required maxlength="100">
+            </div>
+            <div class="form-field form-field--wide">
+              <label for="instructions">Delivery instructions <span class="optional-label">(optional)</span></label>
+              <textarea id="instructions" name="instructions" rows="3" maxlength="500"></textarea>
+            </div>
+          </div>
+          <div class="payment-note">
+            <strong>Payment</strong>
+            <p>No payment method is connected. This demo does not collect money or card details.</p>
+          </div>
+          <p class="checkout-feedback" role="status" aria-live="polite" hidden></p>
+          <button class="button button--primary place-order" type="submit">Place demo order</button>
+          <p class="demo-disclaimer">Demo only: this page cannot submit or confirm a real order. Your cart will remain saved.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="checkout-footer">
+      <div class="page-width">MegaMart · Front-end checkout demonstration</div>
+    </footer>
+  </body>
+</html>

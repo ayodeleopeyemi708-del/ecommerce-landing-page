@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description"
+    content="Discover great deals on electronics, home essentials, groceries and more at MegaMart.">
+  <title>MegaMart | Great deals every day</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/cart-store.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-location" viewBox="0 0 24 24">
+      <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </symbol>
+    <symbol id="icon-delivery" viewBox="0 0 24 24">
+      <path d="M3 6h11v12H3zM14 10h4l3 3v5h-7z" />
+      <circle cx="7.5" cy="19" r="1.5" />
+      <circle cx="17.5" cy="19" r="1.5" />
+    </symbol>
+    <symbol id="icon-offer" viewBox="0 0 24 24">
+      <path d="m12 2 2.8 6.1 6.7.7-5 4.5 1.4 6.6L12 16.5l-5.9 3.4 1.4-6.6-5-4.5 6.7-.7L12 2Z" />
+      <path d="M9 11h.01M15 15h.01l-6-4" />
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <circle cx="10.8" cy="10.8" r="6.8" />
+      <path d="m16 16 5 5" />
+    </symbol>
+    <symbol id="icon-view" viewBox="0 0 24 24">
+      <path d="M9 5h12M9 12h12M9 19h12" />
+      <path d="M3 5h.01M3 12h.01M3 19h.01" />
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 21a8 8 0 0 1 16 0" />
+    </symbol>
+    <symbol id="icon-cart" viewBox="0 0 24 24">
+      <path d="M2 3h2l2.5 12.5a2 2 0 0 0 2 1.5h9.8a2 2 0 0 0 1.9-1.5L22 8H5" />
+      <circle cx="9" cy="21" r="1" />
+      <circle cx="18" cy="21" r="1" />
+    </symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6" />
+    </symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+      <path d="m9 5 7 7-7 7" />
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M3 6h18M3 12h18M3 18h18" />
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+      <path d="m15 18-6-6 6-6" />
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="m9 18 6-6-6-6" />
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.3-4.7a8.5 8.5 0 1 1 16.2-4.1Z" />
+      <path
+        d="M8.5 8.2c.3-.6.6-.6 1-.6h.5c.2 0 .4.1.5.4l.8 1.9c.1.2.1.4-.1.6l-.6.8c-.2.2-.2.4-.1.6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.8-1c.2-.2.4-.2.7-.1l1.8.9c.3.1.4.3.4.5 0 .4-.2 1.1-.6 1.5-.5.5-1.2.8-1.9.8-1.2 0-2.8-.7-4.2-1.9-1.6-1.4-2.7-3.1-2.8-4.4-.1-.8.3-1.6.8-2Z" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M7 3h3l1.5 4-2 1.6a15 15 0 0 0 5.9 5.9l1.6-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 5 5.2 2 2 0 0 1 7 3Z" />
+    </symbol>
+    <symbol id="icon-apple" viewBox="0 0 384 512">
+      <path fill="currentColor"
+        d="M318.7 268.7c-.2-36.7 16.4-64.4 49.9-84.6-18.7-26.7-47-41.4-84.4-44.3-35.5-2.8-74.3 20.8-88.5 20.8-15 0-49.4-19.8-76.4-19.8C63.8 141.2 0 186.3 0 272.5c0 25.5 4.7 51.8 14.1 78.8 12.6 36.7 58.1 126.6 105.6 125.1 24.8-.6 42.3-17.6 75.2-17.6 31.9 0 48.1 17.6 75.8 17.6 47.9-.7 89-82.4 101-119.2-64.2-30.3-53-88.5-53-88.5ZM262.5 105.2c27.1-32.2 24.6-61.5 23.8-71.2-23.9 1.4-51.4 16.2-67.1 34.5-17.3 19.8-27.5 44.2-25.3 71.7 25.7 2 49.3-11.3 68.6-35Z" />
+    </symbol>
+    <symbol id="icon-xiaomi" viewBox="0 0 24 24">
+      <path fill="currentColor" stroke="none"
+        d="M4 17V7h4.4c1.4 0 2.2.9 2.2 2.2V17h-2V9H6v8H4Zm8 0V7h4.4c1.4 0 2.2.9 2.2 2.2V17h-2V9H14v8h-2Zm8-10h2v10h-2z" />
+    </symbol>
+    <symbol id="icon-play-store" viewBox="0 0 24 24">
+      <path fill="#4285f4" stroke="none" d="M3.4 2.1c-.6.4-.9 1.2-.9 2.2v15.4c0 1 .3 1.8.9 2.2L13.2 12 3.4 2.1Z" />
+      <path fill="#34a853" stroke="none" d="M3.4 2.1 15.9 9.2 13.2 12 3.4 2.1Z" />
+      <path fill="#fbbc04" stroke="none" d="m3.4 21.9 9.8-9.9 2.7 2.8-12.5 7.1Z" />
+      <path fill="#ea4335" stroke="none" d="m15.9 9.2 5.5 2.3c.8.4.8 1 0 1.4l-5.5 1.9-2.7-2.8 2.7-2.8Z" />
+    </symbol>
+  </svg>
+  <div class="announcement">
+    <div class="page-width announcement__inner">
+      <span>Welcome to worldwide Megamart!</span>
+      <div class="announcement__links">
+        <a href="#delivery"><svg class="icon utility-icon" aria-hidden="true">
+            <use href="#icon-location" />
+          </svg> Deliver to <strong>423651</strong></a>
+        <a href="#orders"><svg class="icon utility-icon" aria-hidden="true">
+            <use href="#icon-delivery" />
+          </svg> Track your order</a>
+        <a href="#offers"><svg class="icon utility-icon" aria-hidden="true">
+            <use href="#icon-offer" />
+          </svg> All Offers</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="page-width header-main">
+      <button class="menu-toggle icon-button" type="button" aria-label="Toggle category navigation"
+        aria-expanded="false">
+        <svg class="icon" aria-hidden="true">
+          <use href="#icon-menu" />
+        </svg>
+      </button>
+      <a class="wordmark" href="#" aria-label="MegaMart home">Mega<span>Mart</span></a>
+
+      <form class="search" role="search">
+        <label class="sr-only" for="site-search">Search products</label>
+        <svg class="icon search__icon" aria-hidden="true">
+          <use href="#icon-search" />
+        </svg>
+        <input id="site-search" type="search" placeholder="Search essentials, groceries and more...">
+        <button class="search__submit" type="submit" aria-label="Search"><svg class="icon" aria-hidden="true">
+            <use href="#icon-view" />
+          </svg></button>
+      </form>
+
+      <nav class="account-nav" aria-label="Account and cart">
+        <a href="#account"><svg class="icon nav-icon" aria-hidden="true">
+            <use href="#icon-user" />
+          </svg><span>Sign Up/Sign In</span></a>
+        <span class="account-nav__divider" aria-hidden="true"></span>
+        <a class="cart-button" href="checkout-page.html" aria-label="Shopping cart, 0 items">
+          <svg class="icon nav-icon" aria-hidden="true">
+            <use href="#icon-cart" />
+          </svg><span>Cart</span><span class="cart-count" aria-live="polite">0</span>
+        </a>
+      </nav>
+    </div>
+    <nav class="category-nav" aria-label="Shop categories">
+      <div class="page-width category-nav__inner">
+        <a class="category-pill category-pill--active" href="#essentials">Groceries <svg class="icon category-chevron"
+            aria-hidden="true">
+            <use href="#icon-chevron-down" />
+          </svg></a>
+        <a class="category-pill" href="#essentials">Premium Fruits <svg class="icon category-chevron"
+            aria-hidden="true">
+            <use href="#icon-chevron-down" />
+          </svg></a>
+        <a class="category-pill" href="#categories">Home &amp; Kitchen <svg class="icon category-chevron"
+            aria-hidden="true">
+            <use href="#icon-chevron-down" />
+          </svg></a>
+        <a class="category-pill" href="#brands">Fashion <svg class="icon category-chevron" aria-hidden="true">
+            <use href="#icon-chevron-down" />
+          </svg></a>
+        <a class="category-pill" href="#phones">Electronics <svg class="icon category-chevron" aria-hidden="true">
+            <use href="#icon-chevron-down" />
+          </svg></a>
+        <a class="category-pill" href="#categories">Beauty <svg class="icon category-chevron" aria-hidden="true">
+            <use href="#icon-chevron-down" />
+          </svg></a>
+        <a class="category-pill" href="#categories">Home Improvement <svg class="icon category-chevron"
+            aria-hidden="true">
+            <use href="#icon-chevron-down" />
+          </svg></a>
+        <a class="category-pill" href="#categories">Sports, Toys &amp; Luggage <svg class="icon category-chevron"
+            aria-hidden="true">
+            <use href="#icon-chevron-down" />
+          </svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-width">
+    <section class="hero" id="offers" role="region" aria-roledescription="carousel" aria-label="Featured offers">
+      <div class="hero__copy" aria-live="polite" aria-atomic="true">
+        <p class="hero__eyebrow">Best Deal Online on smart watches</p>
+        <h1>SMART WEARABLE.</h1>
+        <p class="hero__offer">UP to 80% OFF</p>
+      </div>
+      <div class="image-slot hero__image" data-src="images/smart-watch-hero.webp.png" data-image-ready="true" role="img"
+        aria-label="Smart wearable offer image">
+        <span class="image-slot__label">Add hero image<br><small>smart-watch-hero.webp.png</small></span>
+      </div>
+      <div class="hero__dots" role="group" aria-label="Choose featured offer">
+        <button class="hero-dot is-active" type="button" aria-label="Show offer 1" aria-current="true"></button>
+        <button class="hero-dot" type="button" aria-label="Show offer 2"></button>
+        <button class="hero-dot" type="button" aria-label="Show offer 3"></button>
+        <button class="hero-dot" type="button" aria-label="Show offer 4"></button>
+        <button class="hero-dot" type="button" aria-label="Show offer 5"></button>
+        <button class="hero-dot" type="button" aria-label="Show offer 6"></button>
+        <button class="hero-dot" type="button" aria-label="Show offer 7"></button>
+      </div>
+      <button class="hero-arrow hero-arrow--previous" type="button" aria-label="Previous offer"><svg class="icon"
+          aria-hidden="true">
+          <use href="#icon-arrow-left" />
+        </svg></button>
+      <button class="hero-arrow hero-arrow--next" type="button" aria-label="Next offer"><svg class="icon"
+          aria-hidden="true">
+          <use href="#icon-arrow-right" />
+        </svg></button>
+    </section>
+
+    <section class="content-section" id="phones">
+      <div class="section-heading">
+        <h2>Grab the best deal on <span>Smartphones</span></h2>
+        <a href="#phones">View All <svg class="icon" aria-hidden="true">
+            <use href="#icon-chevron-right" />
+          </svg></a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-product-id="galaxy-s22-ultra" data-price="32999"
+          data-image="images/galaxy-s22-ultra.webp.png" data-search="galaxy s22 ultra smartphone samsung">
+          <span class="discount-badge">56%<br>OFF</span>
+          <div class="image-slot product-card__image" data-src="images/galaxy-s22-ultra.webp.png"
+            data-image-ready="true" role="img" aria-label="Galaxy S22 Ultra">
+            <span class="image-slot__label">Product image<br><small>galaxy-s22-ultra.webp</small></span>
+          </div>
+          <div class="product-card__details">
+            <h3>Galaxy S22 Ultra</h3>
+            <p class="price"><strong>$329.99</strong><del>$749.99</del></p>
+            <p class="saving">Save - $329.99</p>
+          </div>
+          <button class="quick-add" type="button" data-product="Galaxy S22 Ultra"
+            aria-label="Add Galaxy S22 Ultra to cart">Add to cart</button>
+        </article>
+        <article class="product-card product-card--featured" data-product-id="galaxy-m13" data-price="10499"
+          data-image="images/galaxy-m13.webp.png" data-search="galaxy m13 smartphone samsung">
+          <span class="discount-badge">56%<br>OFF</span>
+          <div class="image-slot product-card__image" data-src="images/galaxy-m13.webp.png" data-image-ready="true"
+            role="img" aria-label="Galaxy M13">
+            <span class="image-slot__label">Product image<br><small>galaxy-m13.webp</small></span>
+          </div>
+          <div class="product-card__details">
+            <h3>Galaxy M13 (4GB | 64 GB )</h3>
+            <p class="price"><strong>$104.99</strong><del>$149.99</del></p>
+            <p class="saving">Save - $45.00</p>
+          </div>
+          <button class="quick-add" type="button" data-product="Galaxy M13" aria-label="Add Galaxy M13 to cart">Add to
+            cart</button>
+        </article>
+        <article class="product-card" data-product-id="galaxy-m33" data-price="16999"
+          data-image="images/galaxy-m33.webp.png" data-search="galaxy m33 smartphone samsung">
+          <span class="discount-badge">56%<br>OFF</span>
+          <div class="image-slot product-card__image" data-src="images/galaxy-m33.webp.png" data-image-ready="true"
+            role="img" aria-label="Galaxy M33">
+            <span class="image-slot__label">Product image<br><small>galaxy-m33.webp</small></span>
+          </div>
+          <div class="product-card__details">
+            <h3>Galaxy M33 (4GB | 64 GB )</h3>
+            <p class="price"><strong>$16999</strong><del>$24999</del></p>
+            <p class="saving">Save - $8000</p>
+          </div>
+          <button class="quick-add" type="button" data-product="Galaxy M33" aria-label="Add Galaxy M33 to cart">Add to
+            cart</button>
+        </article>
+        <article class="product-card" data-product-id="galaxy-m53" data-price="31999"
+          data-image="images/galaxy-m53.webp.png" data-search="galaxy m53 smartphone samsung">
+          <span class="discount-badge">56%<br>OFF</span>
+          <div class="image-slot product-card__image" data-src="images/galaxy-m53.webp.png" data-image-ready="true"
+            role="img" aria-label="Galaxy M53">
+            <span class="image-slot__label">Product image<br><small>galaxy-m53.webp</small></span>
+          </div>
+          <div class="product-card__details">
+            <h3>Galaxy M53 (4GB | 64 GB )</h3>
+            <p class="price"><strong>$31999</strong><del>$40999</del></p>
+            <p class="saving">Save - $9000</p>
+          </div>
+          <button class="quick-add" type="button" data-product="Galaxy M53" aria-label="Add Galaxy M53 to cart">Add to
+            cart</button>
+        </article>
+        <article class="product-card" data-product-id="galaxy-s22-green" data-price="67999"
+          data-image="images/galaxy-s22-green.webp.png" data-search="galaxy s22 ultra smartphone samsung">
+          <span class="discount-badge">56%<br>OFF</span>
+          <div class="image-slot product-card__image" data-src="images/galaxy-s22-green.webp.png"
+            data-image-ready="true" role="img" aria-label="Green Galaxy S22 Ultra">
+            <span class="image-slot__label">Product image<br><small>galaxy-s22-green.webp</small></span>
+          </div>
+          <div class="product-card__details">
+            <h3>Galaxy S22 Ultra</h3>
+            <p class="price"><strong>$67999</strong><del>$85999</del></p>
+            <p class="saving">Save - $18000</p>
+          </div>
+          <button class="quick-add" type="button" data-product="Galaxy S22 Ultra Green"
+            aria-label="Add Galaxy S22 Ultra to cart">Add to cart</button>
+        </article>
+      </div>
+      <p class="empty-search" hidden>No matching products found. Try another search.</p>
+    </section>
+
+    <section class="content-section categories-section" id="categories">
+      <div class="section-heading">
+        <h2>Shop From <span>Top Categories</span></h2>
+        <a href="#categories">View All <svg class="icon" aria-hidden="true">
+            <use href="#icon-chevron-right" />
+          </svg></a>
+      </div>
+      <div class="category-grid">
+        <a class="category-item category-item--selected" href="#phones">
+          <span class="image-slot category-item__image" data-src="images/mobile.png" data-image-ready="true" role="img"
+            aria-label="Mobile category"><span class="image-slot__label">Mobile</span></span>
+          <span>Mobile</span>
+        </a>
+        <a class="category-item" href="#essentials">
+          <span class="image-slot category-item__image" data-src="images/cosmetics.png" data-image-ready="true"
+            role="img" aria-label="Cosmetics category"><span class="image-slot__label">Cosmetics</span></span>
+          <span>Cosmetics</span>
+        </a>
+        <a class="category-item" href="#phones">
+          <span class="image-slot category-item__image" data-src="images/electronics.png" data-image-ready="true"
+            role="img" aria-label="Electronics category"><span class="image-slot__label">Electronics</span></span>
+          <span>Electronics</span>
+        </a>
+        <a class="category-item" href="#brands">
+          <span class="image-slot category-item__image" data-src="images/furniture.png" data-image-ready="true"
+            role="img" aria-label="Furniture category"><span class="image-slot__label">Furniture</span></span>
+          <span>Furniture</span>
+        </a>
+        <a class="category-item" href="#offers">
+          <span class="image-slot category-item__image" data-src="images/watches.png" data-image-ready="true" role="img"
+            aria-label="Watches category"><span class="image-slot__label">Watches</span></span>
+          <span>Watches</span>
+        </a>
+        <a class="category-item" href="#essentials">
+          <span class="image-slot category-item__image" data-src="images/decor.png" data-image-ready="true" role="img"
+            aria-label="Decor category"><span class="image-slot__label">Decor</span></span>
+          <span>Decor</span>
+        </a>
+        <a class="category-item" href="#essentials">
+          <span class="image-slot category-item__image" data-src="images/accessories.png" data-image-ready="true"
+            role="img" aria-label="Accessories category"><span class="image-slot__label">Accessories</span></span>
+          <span>Accessories</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="content-section brands-section" id="brands">
+      <div class="section-heading">
+        <h2>Top <span>Electronics Brands</span></h2>
+        <a href="#brands">View All <svg class="icon" aria-hidden="true">
+            <use href="#icon-chevron-right" />
+          </svg></a>
+      </div>
+      <div class="brand-grid">
+        <a class="brand-card brand-card--dark" href="#phones" aria-label="iPhone offers up to 80 percent off">
+          <span class="brand-card__name iphone">IPHONE</span><span class="brand-card__logo brand-card__logo--apple"
+            aria-hidden="true"><svg class="icon">
+              <use href="#icon-apple" />
+            </svg></span>
+          <span class="brand-card__offer">UP to 80% OFF</span>
+          <span class="image-slot brand-card__image" data-src="images/phone%20image%201.png" data-image-ready="true"
+            role="img" aria-label="iPhone promotion"><span class="image-slot__label">Phone image</span></span>
+        </a>
+        <a class="brand-card brand-card--yellow" href="#phones" aria-label="Realme offers up to 80 percent off">
+          <span class="brand-card__name">REALME</span><span class="brand-card__logo">realme</span>
+          <span class="brand-card__offer">UP to 80% OFF</span>
+          <span class="image-slot brand-card__image one" data-src="images/phone%20image%202.png" data-image-ready="true"
+            role="img" aria-label="Realme promotion"><span class="image-slot__label">Phone image</span></span>
+        </a>
+        <a class="brand-card brand-card--peach" href="#phones" aria-label="Xiaomi offers up to 80 percent off">
+          <span class="brand-card__name">XIAOMI</span><span class="brand-card__logo brand-card__logo--xiaomi"
+            aria-hidden="true"><svg class="icon">
+              <use href="#icon-xiaomi" />
+            </svg></span>
+          <span class="brand-card__offer">UP to 80% OFF</span>
+          <span class="image-slot brand-card__image one" data-src="images/phone%20image%203.png" data-image-ready="true"
+            role="img" aria-label="Xiaomi promotion"><span class="image-slot__label">Phone image</span></span>
+        </a>
+      </div>
+      <div class="carousel-dots" aria-hidden="true"><span
+          class="is-active"></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="content-section essentials-section" id="essentials">
+      <div class="section-heading">
+        <h2>Daily <span>Essentials</span></h2>
+        <a href="#essentials">View All <svg class="icon" aria-hidden="true">
+            <use href="#icon-chevron-right" />
+          </svg></a>
+      </div>
+      <div class="essentials-grid">
+        <a class="essential-item essential-item--selected" href="#essentials">
+          <span class="image-slot essential-item__image" data-src="images/daily%20essentials.png"
+            data-image-ready="true" role="img" aria-label="Daily essentials"><span class="image-slot__label">Daily
+              essentials</span></span>
+          <span>Daily Essentials</span><strong>UP to 50% OFF</strong>
+        </a>
+        <a class="essential-item" href="#essentials">
+          <span class="image-slot essential-item__image" data-src="images/vegetables.png" data-image-ready="true"
+            role="img" aria-label="Vegetables"><span class="image-slot__label">Vegetables</span></span>
+          <span>Vegetables</span><strong>UP to 50% OFF</strong>
+        </a>
+        <a class="essential-item" href="#essentials">
+          <span class="image-slot essential-item__image" data-src="images/fruits.png" data-image-ready="true" role="img"
+            aria-label="Fruits"><span class="image-slot__label">Fruits</span></span>
+          <span>Fruits</span><strong>UP to 50% OFF</strong>
+        </a>
+        <a class="essential-item" href="#essentials">
+          <span class="image-slot essential-item__image" data-src="images/strawberry.png" data-image-ready="true"
+            role="img" aria-label="Strawberries"><span class="image-slot__label">Strawberry</span></span>
+          <span>Strawberry</span><strong>UP to 50% OFF</strong>
+        </a>
+        <a class="essential-item" href="#essentials">
+          <span class="image-slot essential-item__image" data-src="images/mango.png" data-image-ready="true" role="img"
+            aria-label="Mango"><span class="image-slot__label">Mango</span></span>
+          <span>Mango</span><strong>UP to 50% OFF</strong>
+        </a>
+        <a class="essential-item" href="#essentials">
+          <span class="image-slot essential-item__image" data-src="images/cherry.png" data-image-ready="true" role="img"
+            aria-label="Cherries"><span class="image-slot__label">Cherry</span></span>
+          <span>Cherry</span><strong>UP to 50% OFF</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width footer-content">
+      <div class="footer-contact">
+        <a class="footer-wordmark" href="#">MegaMart</a>
+        <h2>Contact Us</h2>
+        <p><svg class="icon footer-contact__icon" aria-hidden="true">
+            <use href="#icon-whatsapp" />
+          </svg> WhatsApp<br><a href="tel:+12029182132">+1 202-918-2132</a></p>
+        <p><svg class="icon footer-contact__icon" aria-hidden="true">
+            <use href="#icon-phone" />
+          </svg> Call Us<br><a href="tel:+12029182132">+1 202-918-2132</a></p>
+        <h2 class="download-title">Download App</h2>
+        <div class="app-badges">
+          <a href="#app-store" class="app-badge"><svg class="icon app-badge__apple" aria-hidden="true">
+              <use href="#icon-apple" />
+            </svg><span><small>DOWNLOAD ON THE</small>App Store</span></a>
+          <a href="#play-store" class="app-badge"><svg class="icon app-badge__play" aria-hidden="true">
+              <use href="#icon-play-store" />
+            </svg><span><small>GET IT ON</small>Google Play</span></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h2>Most Popular Categories</h2>
+        <ul>
+          <li><a href="#essentials">Staples</a></li>
+          <li><a href="#essentials">Beverages</a></li>
+          <li><a href="#categories">Personal Care</a></li>
+          <li><a href="#categories">Home Care</a></li>
+          <li><a href="#categories">Baby Care</a></li>
+          <li><a href="#essentials">Vegetables &amp; Fruits</a></li>
+          <li><a href="#essentials">Snacks &amp; Foods</a></li>
+          <li><a href="#essentials">Dairy &amp; Bakery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2>Customer Services</h2>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#terms">Terms &amp; Conditions</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#ewaste">E-waste Policy</a></li>
+          <li><a href="#returns">Cancellation &amp; Return Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-width footer-bottom">© 2022 All rights reserved. Reliance Retail Ltd.</div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>
